@@ -51,9 +51,9 @@ import geometry_msgs
 # box for a point cluster
 class ClusterBoundingBoxFinder:
 
-    def __init__(self, tf_listener, tf_broadcaster, base_frame=""):
+    def __init__(self, tf_listener, tf_broadcaster=None, base_frame=""):
         assert(tf_listener)
-        assert(tf_broadcaster)
+        #assert(tf_broadcaster)
         self.tf_listener = tf_listener
         self.tf_broadcaster = tf_broadcaster
         self.base_frame = base_frame
