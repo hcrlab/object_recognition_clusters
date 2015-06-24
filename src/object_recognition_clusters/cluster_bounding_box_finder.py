@@ -214,5 +214,4 @@ class ClusterBoundingBoxFinder:
         object_pose.pose.orientation.w = object_frame_quat[3]
         object_pose.header.frame_id = cluster_frame
 
-        return (object_points, object_bounding_box_dims, object_bounding_box, object_pose)
-
+        return (object_points, object_bounding_box_dims, object_bounding_box, object_to_base_frame, object_to_cluster_frame)
